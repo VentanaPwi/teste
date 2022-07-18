@@ -1,0 +1,15 @@
+Program p:\toolbar1\fontes\mytools.prg has the following errors:
+    Form WTBOX_MAIN - Undefined
+
+Visual Class Library p:\system\pwiclass.vcx has the following errors:
+    Unknown SETCONNECTTIMEOUT - Undefined
+    Unknown SETRESPONSETIMEOUT - Undefined
+    Unknown URLENCODE - Undefined
+
+Form p:\system\system_trocarsenha.scx has the following errors:
+    File OLA.BMP - Undefined
+
+Program p:\menuraiz.prg has the following errors:
+    Visual Class Library _REPORTLISTENER - Undefined
+    Visual Class Library _WS3CLIENT - Undefined
+

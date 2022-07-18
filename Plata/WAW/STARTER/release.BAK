@@ -1,0 +1,16 @@
+************************************************************************
+**                        HISTÓRICO DE RELEASE                        **
+************************************************************************
+
+
+1.00.001 - 14:33 27/1/2009
+TASSIO: 	Controle de log de Release
+
+1.00.002 - 14:34 28/1/2009
+TASSIO: 	Starter pode selecionar a conexão que deseja utilizar para conectar
+
+1.100.75 - ?
+MURILO:		Inclusão da tela de configurar conexão quando não for encontrado o arquivo CONFIG.WAW
+
+1.100.76 - 12:00 17/06/2011
+BECHARA:	Opção para fechar disponivel no click do label de "Esc", formulario não é mais AlwaysOnTop.

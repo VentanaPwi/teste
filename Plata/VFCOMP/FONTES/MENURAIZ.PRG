@@ -1,0 +1,62 @@
+PARAMETERS tcPARAMETRO
+
+IF VARTYPE(tcPARAMETRO) <> 'C'
+	tcPARAMETRO = ''
+ENDIF
+
+SET PROCEDURE TO FUNCOES.PRG
+
+IF _VFP.StartMode <> 0
+	ON ERROR DO ROTERRO WITH ERROR(),MESSAGE(),PROGRAM(),LINENO()
+ENDIF
+
+SET SAFETY OFF
+SET PATH TO 'PRG' ADD
+SET DELETED ON
+SET MEMOWIDTH TO 8096
+
+LOCAL lcPAR1, lcPAR2 AS String
+STORE '' TO lcPAR1, lcPAR2
+
+lcPAR1 = STREXTRACT(tcPARAMETRO, '<', '>', 1)
+lcPAR2 = STREXTRACT(tcPARAMETRO, '<', '>', 2)
+
+DO FORM COMPARAR WITH lcPAR1, lcPAR2
+
+READ EVENTS
+
+PROC ROTERRO
+************
+PARAMETERS tnMYERRO, tcMYMESS, tcMYPROG, tnMYLINH
+
+	LOCAL lcNAMEFORM, lcERROJOB, lcERRORFILE, lcFILENAME AS String
+	STORE '' TO lcNAMEFORM, lcERROJOB, lcERRORFILE, lcFILENAME
+	
+	DO CASE
+
+	CASE tnMYERRO = 1705
+		DO MENS WITH 'Acesso nao permitido no momento! Arquivo bloqueado',1
+
+	CASE tnMYERRO = 1958
+		DO MENS WITH 'Erro para acessar impressora, verifique se a impressora esta disponível.',1
+		
+	OTHERWISE
+	
+		LOCAL lcERRO AS STRING
+		TEXT TO lcERRO NOSHOW PRETEXT 7
+			Ocorreu uma falha no seu aplicativo e este terá que ser encerrado.
+			Reporte o erro e entre em contato com o suporte técnico do seu software.
+		ENDTEXT
+		lcERRO = lcERRO +CHR(13)+CHR(10)+;
+				 'ERRO: '+ALLTRIM(STR(tnMYERRO))+'='+tcMYMESS+CHR(13)+CHR(10)+;
+				 'LINHA: ' + ALLTRIM(STR(tnMYLINH))+CHR(13)+CHR(10)+;
+				 'ROTINA: '+ tcMYPROG
+
+		* CHAMA FORMULÁRIO DE ERRO
+		MESSAGEBOX(lcERRO)
+
+		WAIT CLEAR
+
+	ENDCASE
+	CANCEL
+RETURN

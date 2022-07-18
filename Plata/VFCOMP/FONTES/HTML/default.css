@@ -1,0 +1,58 @@
+<style type="text/css">
+
+
+	
+	.matchline {
+		border-width: 1px;
+		border-style: solid;
+		border-color: gray;
+		background-color: yellow;
+		margin-top: -17px;
+		margin-bottom: -32px;
+		padding-top: 0px;
+		padding-bottom: 1px;
+		display: inline;
+	}
+	
+	.matchline pre {
+		margin-top: -15px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		padding-bottom: -5px;
+	}
+	
+	.matchword {
+		background-color: #99FF99;
+		font-weight:bold;
+	}
+	
+	.vfpcode{
+		color: black;
+	}
+	
+	.vfpreserved{
+		color: blue;
+	}
+	
+	.vfpcomment{
+		color: green;
+	}
+	
+	.vfpliteral{
+		color: red;
+	}
+	
+	.vfpstring{
+		color: red;
+	}
+
+	.vfplinenum{
+		color: gray;
+		font-style: italic;
+		font-family: Fixedsys;
+	}
+			
+</style>
+
+
+

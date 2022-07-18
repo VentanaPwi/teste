@@ -1,0 +1,8 @@
+Customer: Password Interativa Sistemas Ltda
+Version: 14.6
+License: W+P+H+L+X
+Compiled in: vfp9
+Release date: 11/01/13
+License string: Password Interativa Sistemas Ltda
+
+Subscription expiration: 10/11/14

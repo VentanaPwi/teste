@@ -1,0 +1,6 @@
+DLL's
+ - CLRHOST.DLL
+ - WWDOTNETBRIDGE.DLL
+São o coração da ponte entre o .NET e o FOX, sem elas não é possivel acessar o goUTILITARIOS.oDOTNETBRIDGE e nem suas funções respectivas.
+
+Os arquivos *.dll dessa pasta devem estar na raiz da pasta do cliente e também deve ser feito o UPG dos mesmos.

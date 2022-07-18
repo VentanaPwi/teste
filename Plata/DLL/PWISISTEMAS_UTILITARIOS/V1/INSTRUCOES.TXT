@@ -1,0 +1,20 @@
+DLL's
+ - NEWTONSOFT.JSON.DLL
+ - PWISISTEMAS_UTILITARIOS.DLL
+
+Os arquivos *.dll citados acima.
+Dessa pasta devem estar na raiz da pasta do cliente e também deve ser feito o UPG dos mesmos.
+
+Essas dll's tem como objetivo permitir que seja usado todas as funionalidades de "utilitarios" da PWI, dentre elas o JSONParser que tem o objetivo de converter JSON para XML, XML para JSON, embelezamento de JSON e XML, etc.
+
+Exemplos de uso
+goUTILITARIOS.oJSONParser.JsonToXml('{"mensagem": "Olá JSON Parser"}') && sem embelezamento
+goUTILITARIOS.oJSONParser.JsonToXml('{"mensagem": "Olá JSON Parser"}', '', .T.) && com embelezamento
+
+goUTILITARIOS.oJSONParser.JsonToXml('{"lista": [{"item": "01"}, {"item": "02"}]}', 'root')
+goUTILITARIOS.oJSONParser.JsonToXml('{"root": {"lista": [{"item": "01"}, {"item": "02"}]}}')
+
+goUTILITARIOS.oJSONParser.XmlToJson('<mensagem>Olá JSON Parser</mensagem>') && sem embelezamento
+goUTILITARIOS.oJSONParser.XmlToJson('<mensagem>Olá JSON Parser</mensagem>', .T.) && com embelezamento
+
+O formulario ESPECIAL_TESTARJSONPARSER pode ser usado para testar as funcionalidades.

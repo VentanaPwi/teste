@@ -1,0 +1,5 @@
+Executa o comando de update do SVN na pasta corrente.
+Se os 3 primeiros caracteres da pasta corrente forem 'D:\' ou os 4 ultimos forem '_SVN' executa o comando e abre o sistema em seguida.
+
+MACRO:
+DO{SPACEBAR}G:\TRAB\EQUIPES\F8\UTILITARIOS\PRGS\UPDATE.FXP{ENTER}

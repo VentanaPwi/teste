@@ -1,0 +1,6 @@
+Executa o comando de commit do SVN na pasta corrente.
+O processo pergunta se o técnico quer realmente executar o comando e mostra a pasta atual.
+
+
+MACRO:
+DO{SPACEBAR}\\FILESERVER\TRAB\Equipes\F8\Utilitarios\PRGs\COMMITAR.FXP{ENTER}

@@ -1,0 +1,8 @@
+Customer: Password Interativa Sistemas Ltda
+Version: 12.4
+License: W+P+H+L+X
+Compiled in: vfp9
+Release date: 11/15/2007
+License string: Password Interativa Sistemas Ltda
+
+Subscription expiration: 12/12/2007

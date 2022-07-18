@@ -1,0 +1,32 @@
+ctl32 Classes README FILE - Carlos Alloatti - calloatti@gmail.com
+
+ctl32_scontainer scrollable container by Carlos Alloatti & Malcolm Greene
+
+http://www.ctl32.com.ar/
+
+TESTED ONLY IN VFP9, VISTA RC1, XP, 2000, NT, 98
+
+This classes are free to use, please contribute reporting bugs, 
+proposing changes and updates.
+
+Start with \samples\ctl32_examples project
+
+
+ctl32_gripper
+20070727
+
+BindEvent to WM_NCHITTEST eliminated, now class does BindEvent to oMouseTrap.MouseDown
+and in the event handler sends a WM_LMOUSEDOWN message to the form with the coordinates
+of the right bottom corner. This solves problems with mcol() and mrow()
+
+Added class path to search of ctl32_structs and ctl_32common
+
+ctl32_statusbar
+20070703
+
+Trace aware timer class added
+
+Changed code to find hWnd of native VFP status bar window, was
+using WindowFromPoint, now uses GetWindow
+
+New ctlSizeGrip property, allows to disable the sizing grip.

@@ -1,0 +1,94 @@
+***********************************************************
+* - MENURAIZ	- MENU PRICIPAL DAS DEFINIÇÕES DE APP'S	- *
+* - AUTHOR		- PASSWORD SISTEMAS LTDA				- *
+***********************************************************
+
+FUNC SBDVEM
+***********
+*DECRIPTA SENHA DE CONEXÃO
+LPARAMETERS tcHIDEN AS String
+	IF TYPE('tcHIDEN') <> 'C'
+		tcHIDEN	= ''
+	ENDIF
+	IF EMPTY(tcHIDEN)
+		RETURN('')
+	ENDIF
+	LOCAL lcSENHA, lcSEMENTE, lcLETRA AS String
+	LOCAL lnX, lnY AS INTEGER
+	tcHIDEN		= ALLTRIM(tcHIDEN)
+	lcSENHA		= ''
+	lcSEMENTE	= SUBSTR(tcHIDEN,2,1)
+	FOR lnX = LEN(tcHIDEN) TO 3 STEP -3
+		lnY		= VAL( SUBSTR(tcHIDEN,lnX-2,3) ) - ASC(lcSEMENTE)
+		lcLETRA	= ''
+		IF lnY>27 AND lnY<256
+			lcLETRA = CHR(lnY)
+		ENDIF
+		lcSENHA = lcSENHA + lcLETRA
+	ENDFOR
+	RETURN(lcSENHA)
+ENDFUNC
+
+FUNC SBDVAI
+***********
+* ENCRIPTA SENHA DE BANCO DE DADOS
+LPARAMETERS tcSENHA AS String
+	IF TYPE('tcSENHA') <> 'C'
+		tcSENHA	= ''
+	ENDIF
+	IF EMPTY(tcSENHA)
+		RETURN('')
+	ENDIF
+	LOCAL lcHIDEN, lcSEMENTE, lcLETRA AS String
+	LOCAL lnX, lnY AS INTEGER
+	tcSENHA		= ALLTRIM(tcSENHA)
+	lcHIDEN		= ''
+	lnX			= INT(RAND()*25)
+	lnY			= MOD(ASC(tcSENHA+' '),10)
+	lcSEMENTE	= CHR(lnX+65)
+	lcHIDEN		= STR(lnY,1)+lcSEMENTE
+	FOR lnX = LEN(tcSENHA) TO 1 STEP -1
+		lcLETRA = SUBSTR(tcSENHA,lnX,1)
+		lnY		= ASC(lcLETRA)+ASC(lcSEMENTE)
+		lcLETRA	= PADL( ALLTRIM(STR(lnY)) ,3,'0')
+		lcHIDEN	= lcHIDEN + lcLETRA
+	ENDFOR
+	RETURN(lcHIDEN)
+ENDFUNC
+
+FUNC CRIPTAR
+************
+* tcSEMENTE É PARAMETRO OPCIONAL C(1)
+* OBS: não existe rotina reversa de decriptação, o que garante o sigilo da senha
+LPARAMETERS tcSENHA, tcSEMENTE AS String
+	IF TYPE('tcSENHA') <> 'C'
+		tcSENHA	= ''
+	ENDIF
+	IF EMPTY(tcSENHA)
+		RETURN('')
+	ENDIF
+	IF TYPE('tcSEMENTE') <> 'C'
+		tcSEMENTE	= ''
+	ENDIF
+	LOCAL lcLETRA, lcCRIPTA, lcJUNTA AS String
+	LOCAL lnSEMENTE, lnI, lnASC, lnRESTO AS INTEGER
+	tcSENHA = ALLTRIM(tcSENHA)
+	IF EMPTY(tcSEMENTE)
+		lnSEMENTE	= INT(25*RAND(SECONDS()*100))
+		tcSEMENTE	= CHR(64+lnSEMENTE)
+	ENDIF
+	lcCRIPTA	= tcSEMENTE
+	lnRESTO		= MOD(ASC(tcSEMENTE),10)+1
+	FOR lnI = 1 TO 30
+		lcLETRA	= SUBSTR(tcSENHA,lnI,1)
+		lnASC	= ASC(lcLETRA)
+		lnASC	= lnASC + lnI + lnRESTO
+		lcJUNTA	= CHR( MOD(lnASC,220)+14 )
+		IF lcJUNTA=CHR(39)
+			lcJUNTA=CHR(5)
+		ENDIF
+		lnRESTO		= MOD(lnASC,32)+1
+		lcCRIPTA	= lcCRIPTA + lcJUNTA
+	ENDFOR
+	RETURN(lcCRIPTA)
+ENDFUNC

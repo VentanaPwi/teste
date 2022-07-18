@@ -1,0 +1,5 @@
+FOR i = 1 TO ADIR(afiles, "*.frx")
+	USE (afiles[i,1]) ALIAS report
+	brow
+	use
+ENDFOR

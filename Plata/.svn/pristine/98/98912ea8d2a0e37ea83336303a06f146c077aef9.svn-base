@@ -1,0 +1,21 @@
+A assinatura do executável do Volpe é necessária para que não ocorra o problema de tela branca vinculado aos sistemas tipo "GUARDIÃO" dos bancos.
+
+Passo a passo:
+
+1) Compile o EXE normalmente.
+2) Caso não tenha assinado nenhum EXE na sua maquina ou não encontrar o signtool.exe na sua máquina.
+3) Execute o comando abaixo no prompt do DOS para assinar o EXE do Volpe:
+
+1
+CD C:\Program Files (x86)\Windows Kits\10\bin\x64\
+
+2
+signtool.exe sign /f "P:\CERTIFICADO\CERTIFICADO.PFX" /p p0w2i8 /t http://timestamp.verisign.com/scripts/timestamp.dll /a P:\VOLPEWAW_NO_REFOX.EXE
+
+3 - Somente se o 2 falhar
+signtool.exe sign /f "P:\CERTIFICADO\CERTIFICADO.PFX" /p p0w2i8 /t http://timestamp.comodoca.com/authenticode /a P:\VOLPEWAW_NO_REFOX.EXE
+
+4) Passa o REFOX XII no EXE
+5) Verifique na opção "Propriedades" do EXE se a assinatura é exibida.
+
+Pronto, tudo OK!

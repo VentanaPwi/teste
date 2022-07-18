@@ -1,0 +1,95 @@
+Form e:\testesvf\plata\xconfig\limpafile.scx has the following errors:
+    Unknown LALOCAIS - Undefined
+
+Visual Class Library e:\testesvf\plata\system\pwiclass.vcx has the following errors:
+    Unknown POEIMG - Undefined
+    Unknown PESQUISASQL - Undefined
+    Proc./Func. GRAVALOG - Undefined
+    Unknown EXECUTASQL - Undefined
+    Unknown VERIFOBRIGATORIO - Undefined
+    Unknown CHAMAFORM - Undefined
+    Unknown RETORNASET - Undefined
+    Unknown TEMPFILE - Undefined
+    Unknown DATASERVER - Undefined
+    Proc./Func. SALVARSET - Undefined
+    Proc./Func. DESABILITARPK - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Unknown VALIDAR - Undefined
+    Proc./Func. GRAVALOGPLUS - Undefined
+    Unknown VMODULO - Undefined
+    Unknown VDIREITOS - Undefined
+    Proc./Func. IMPRIMIR - Undefined
+    Unknown SEMACENTO - Undefined
+    Proc./Func. CONFIGFRM - Undefined
+    Proc./Func. DIMINUIR - Undefined
+    Unknown VALIDAEMAIL - Undefined
+
+Form e:\testesvf\plata\system\system_rateiogerar.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown VALIDAR - Undefined
+    Proc./Func. LERTABLES - Undefined
+
+Form e:\testesvf\plata\system\system_outramoeda.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown VERIFOBRIGATORIO - Undefined
+    Unknown DATASERVER - Undefined
+
+Form e:\testesvf\plata\system\system_ordenar.scx has the following errors:
+    Proc./Func. LERCOLUMNS - Undefined
+
+Form e:\testesvf\plata\system\system_pkfiltrar.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+
+Form e:\testesvf\plata\system\system_mailto.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown VERIFOBRIGATORIO - Undefined
+
+Form e:\testesvf\plata\system\system_localizarnacoluna.scx has the following errors:
+    Unknown POEIMG - Undefined
+
+Form e:\testesvf\plata\system\system_somatoria.scx has the following errors:
+    Unknown POEIMG - Undefined
+    Unknown PESQUISASQL - Undefined
+    Unknown CHAMAFORM - Undefined
+    Unknown RETORNASET - Undefined
+    Unknown TEMPFILE - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Unknown VDIREITOS - Undefined
+    Proc./Func. IMPRIMIR - Undefined
+
+Form e:\testesvf\plata\system\system_logsconsultar.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown VALIDAR - Undefined
+    Proc./Func. LERTABLES - Undefined
+
+Form e:\testesvf\plata\system\system_visualizarclips.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown RETORNASET - Undefined
+    Unknown TEMPFILE - Undefined
+
+Form e:\testesvf\plata\system\system_buscacontato.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+    Unknown VALIDAR - Undefined
+
+Form e:\testesvf\plata\system\system_logavancado.scx has the following errors:
+    Proc./Func. LERTABLES - Undefined
+
+Form e:\testesvf\plata\system\system_anexodigitar.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+    Unknown RETORNASET - Undefined
+    Unknown TEMPFILE - Undefined
+
+Form e:\testesvf\plata\system\system_cepcorreios.scx has the following errors:
+    Unknown RETORNASET - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Unknown VALIDAR - Undefined
+    Unknown CRIAROBJETO - Undefined
+    Unknown TIRANONUM - Undefined
+    Unknown COMPILARENDERECO - Undefined
+
+Form e:\testesvf\plata\system\system_confirmarenvio.scx has the following errors:
+    Unknown PESQUISASQL - Undefined
+
+Form e:\testesvf\plata\system\system_limitarlinhas.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+

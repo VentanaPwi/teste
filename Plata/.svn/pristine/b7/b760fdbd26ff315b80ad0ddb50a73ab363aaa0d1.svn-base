@@ -1,0 +1,79 @@
+Program p:\waw\wawupg\menuraiz.prg has the following errors:
+    Unknown TRATASQLMYSQL - Undefined
+
+Form p:\system\system_erroconexao.scx has the following errors:
+    Proc./Func. GRAVALOG - Undefined
+
+Visual Class Library p:\system\pwiclass.vcx has the following errors:
+    Proc./Func. GRAVALOG - Undefined
+    Unknown POEIMG - Undefined
+    Unknown VERIFOBRIGATORIO - Undefined
+    Unknown CHAMAFORM - Undefined
+    Proc./Func. DESABILITARPK - Undefined
+    Unknown VALIDAR - Undefined
+    Unknown SETCONNECTTIMEOUT - Undefined
+    Unknown SETRESPONSETIMEOUT - Undefined
+    Unknown URLENCODE - Undefined
+    Proc./Func. AMBIENTAR - Undefined
+    Unknown VCORFLAT - Undefined
+    Unknown VDIREITOS - Undefined
+    Proc./Func. CONFIGFRM - Undefined
+    Proc./Func. CONFIGFRMFLAT - Undefined
+    Proc./Func. DIMINUIR - Undefined
+    Proc./Func. SALVARSET - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Proc./Func. GRAVALOGPLUS - Undefined
+    Unknown VALIDAEMAIL - Undefined
+    Unknown VMODULO - Undefined
+    Proc./Func. IMPRIMIR - Undefined
+    Unknown AUTORIZOU - Undefined
+    Unknown SEMACENTO - Undefined
+    Unknown TIRANOALF - Undefined
+
+Form p:\system\system_outramoeda.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+
+Form p:\system\system_cepcorreios.scx has the following errors:
+    Unknown VALIDAR - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Unknown CRIAROBJETO - Undefined
+    Unknown COMPILARENDERECO - Undefined
+
+Form p:\system\system_ordenar.scx has the following errors:
+    Proc./Func. LERCOLUMNS - Undefined
+
+Form p:\system\system_logsconsultar.scx has the following errors:
+    Unknown VALIDAR - Undefined
+    Proc./Func. LERTABLES - Undefined
+
+Form p:\system\system_rateiogerar.scx has the following errors:
+    Unknown VALIDAR - Undefined
+    Proc./Func. LERTABLES - Undefined
+
+Form p:\system\system_mailto.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+
+Form p:\system\system_localizarnacoluna.scx has the following errors:
+    Unknown POEIMG - Undefined
+
+Form p:\system\system_somatoria.scx has the following errors:
+    Unknown POEIMG - Undefined
+    Unknown CHAMAFORM - Undefined
+    Unknown VDIREITOS - Undefined
+    Proc./Func. FIMESPERANDO - Undefined
+    Proc./Func. IMPRIMIR - Undefined
+
+Form p:\system\system_logavancado.scx has the following errors:
+    Proc./Func. LERTABLES - Undefined
+
+Form p:\system\system_anexodigitar.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+
+Form p:\system\system_buscacontato.scx has the following errors:
+    Unknown VALIDAR - Undefined
+    Proc./Func. LERCOLUMNS - Undefined
+    Proc./Func. LERTABLES - Undefined
+
+Form p:\system\system_limitarlinhas.scx has the following errors:
+    Unknown VERIFOBRIGATORIO - Undefined
+

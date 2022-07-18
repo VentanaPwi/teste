@@ -1,0 +1,692 @@
+¡
+Error in line 367: Unrecognized command verb.
+ýùx
+Error in line 368: Unrecognized command verb.
+ýùSþ
+Error in line 371: Unrecognized command verb.
+ýù'þ
+Error in line 377: Unrecognized command verb.
+ýù#þ
+Error in line 379: Unrecognized command verb.
+Cø
+Error in line 382: Unrecognized command verb.
+ýþ
+Error in line 383: Unrecognized command verb.
+ýùàþ
+Error in line 401: Unrecognized command verb.
+÷
+Error in line 407: Unrecognized command verb.
+÷
+Error in line 408: Unrecognized command verb.
+ýþ
+Error in line 409: Unrecognized command verb.
+Cø
+Error in line 411: Unrecognized command verb.
+ýþ
+Error in line 412: Unrecognized command verb.
+ýùt
+Error in line 416: Unrecognized command verb.
+ýùçþ$
+Error in line 423: Unrecognized command verb.
+ýùãþ
+Error in line 426: Unrecognized command verb.
+Cø
+Error in line 427: Unrecognized command verb.
+ýþ
+Error in line 428: Unrecognized command verb.
+ýùdþ1
+Error in line 429: Unrecognized command verb.
+Cø
+Error in line 430: Unrecognized command verb.
+“ýþ
+Error in line 431: Unrecognized command verb.
+ýù³þ
+Error in line 433: Unrecognized command verb.
+BackStyle = 0
+Error in line 444: Statement is not in a procedure.
+Caption = "Arquivos a converter:"
+Error in line 445: Statement is not in a procedure.
+Height = 17
+Error in line 446: Statement is not in a procedure.
+Left = 1
+Error in line 447: Statement is not in a procedure.
+Top = 59
+Error in line 448: Statement is not in a procedure.
+Width = 115
+Error in line 449: Statement is not in a procedure.
+Name = "Label1"
+Error in line 450: Statement is not in a procedure.
+Anchor = 5
+Error in line 452: Statement is not in a procedure.
+DeleteMark = .F.
+Error in line 453: Statement is not in a procedure.
+GridLines = 2
+Error in line 454: Statement is not in a procedure.
+Height = 383
+Error in line 455: Statement is not in a procedure.
+Left = 3
+Error in line 456: Statement is not in a procedure.
+RecordSource = "TMPVAZIO"
+Error in line 457: Statement is not in a procedure.
+RowHeight = 17
+Error in line 458: Statement is not in a procedure.
+Top = 72
+Error in line 459: Statement is not in a procedure.
+Width = 226
+Error in line 460: Statement is not in a procedure.
+GridLineColor = 128,128,255
+Error in line 461: Syntax error.
+AllowCellSelection = .F.
+Error in line 462: Statement is not in a procedure.
+Name = "grdARQ"
+Error in line 463: Statement is not in a procedure.
+LOCAL lcORI, lcWAW AS String
+Error in line 466: Statement is not in a procedure.
+IF UPPER(JUSTEXT(TMPARQ.ARQUIVO)) = 'PRG'
+Error in line 469: Statement is not in a procedure.
+lcORI = THISFORM.txtPASTA.Value + 'OBJETOS\' + TMPARQ.ARQUIVO
+Error in line 470: Statement is not in a procedure.
+lcWAW = THISFORM.txtPASTA.Value + 'WAW\OBJETOS\'+ TMPARQ.ARQUIVO
+Error in line 471: Statement is not in a procedure.
+ELSE
+Error in line 472: Statement is not in a procedure.
+lcORI = TMPARQ.ARQUIVO
+Error in line 473: Statement is not in a procedure.
+lcWAW = 'WAW\'+lcORI
+Error in line 474: Statement is not in a procedure.
+ENDIF
+Error in line 475: Statement is not in a procedure.
+IF NOT FILE(lcWAW)
+Error in line 477: Statement is not in a procedure.
+lcWAW=''
+Error in line 478: Statement is not in a procedure.
+ENDIF
+Error in line 479: Statement is not in a procedure.
+LOCAL loSHELL AS "WSCRIPT.SHELL"
+Error in line 481: Statement is not in a procedure.
+loSHELL = CREATEOBJECT("WSCRIPT.SHELL")
+Error in line 482: Statement is not in a procedure.
+DEFINE POPUP CONTEXTO SHORTCUT RELATIVE FROM MROW(),MCOL()
+Error in line 484: Statement is not in a procedure.
+DEFINE BAR 1 OF CONTEXTO PROMPT 'Modify (original)'
+Error in line 486: Statement is not in a procedure.
+ON SELECTION BAR 1 OF CONTEXTO loSHELL.Run(lcORI)
+Error in line 487: Statement is not in a procedure.
+IF NOT EMPTY(lcWAW)
+Error in line 488: Statement is not in a procedure.
+DEFINE BAR 2 OF CONTEXTO PROMPT 'Modify (corrigido)'
+Error in line 489: Statement is not in a procedure.
+ON SELECTION BAR 2 OF CONTEXTO loSHELL.Run(lcWAW)
+Error in line 490: Statement is not in a procedure.
+ENDIF
+Error in line 491: Statement is not in a procedure.
+ACTIVATE POPUP CONTEXTO
+Error in line 493: Statement is not in a procedure.
+ENDPROC
+Error in line 496: Nesting error.
+ýùÏ
+Error in line 551: Unrecognized command verb.
+ýù¿þ&
+Error in line 555: Unrecognized command verb.
+ýùM
+Error in line 557: Unrecognized command verb.
+ýù¶
+Error in line 560: Unrecognized command verb.
+ýù!
+Error in line 563: Unrecognized command verb.
+
+Error in line 566: Unrecognized command verb.
+Left = 230
+Error in line 567: Statement is not in a procedure.
+Height = 432
+Error in line 568: Statement is not in a procedure.
+Width = 586
+Error in line 569: Statement is not in a procedure.
+Anchor = 15
+Error in line 570: Statement is not in a procedure.
+SpecialEffect = 0
+Error in line 571: Statement is not in a procedure.
+Name = "Shape1"
+Error in line 572: Statement is not in a procedure.
+BackStyle = 0
+Error in line 574: Statement is not in a procedure.
+Caption = "Arquivo:"
+Error in line 575: Statement is not in a procedure.
+Height = 17
+Error in line 576: Statement is not in a procedure.
+Left = 233
+Error in line 577: Statement is not in a procedure.
+Top = 11
+Error in line 578: Statement is not in a procedure.
+Width = 45
+Error in line 579: Statement is not in a procedure.
+Name = "Label2"
+Error in line 580: Statement is not in a procedure.
+Enabled = .F.
+Error in line 582: Statement is not in a procedure.
+Height = 23
+Error in line 583: Statement is not in a procedure.
+Left = 276
+Error in line 584: Statement is not in a procedure.
+Top = 1
+Error in line 585: Statement is not in a procedure.
+Width = 540
+Error in line 586: Statement is not in a procedure.
+DisabledForeColor = 0,0,0
+Error in line 587: Syntax error.
+Name = "txtARQ"
+Error in line 588: Statement is not in a procedure.
+BackStyle = 0
+Error in line 590: Statement is not in a procedure.
+Caption = "Descritivo das alterações"
+Error in line 591: Statement is not in a procedure.
+Height = 17
+Error in line 592: Statement is not in a procedure.
+Left = 233
+Error in line 593: Statement is not in a procedure.
+Top = 34
+Error in line 594: Statement is not in a procedure.
+Width = 141
+Error in line 595: Statement is not in a procedure.
+Name = "Label3"
+Error in line 596: Statement is not in a procedure.
+commandbutton
+Error in line 598: Unrecognized command verb.
+commandbutton
+Error in line 599: Unrecognized command verb.
+Left = 204
+Error in line 600: Statement is not in a procedure.
+Height = 25
+Error in line 601: Statement is not in a procedure.
+Width = 25
+Error in line 602: Statement is not in a procedure.
+Caption = "v"
+Error in line 603: Statement is not in a procedure.
+Name = "cmdLOADFILES"
+Error in line 604: Statement is not in a procedure.
+LOCAL lcMASK, lcFILE AS String
+Error in line 606: Statement is not in a procedure.
+LOCAL lnI, lnQF, lnQP AS Integer
+Error in line 607: Statement is not in a procedure.
+LOCAL loREG AS Object
+Error in line 608: Statement is not in a procedure.
+LOCAL llRET AS Logical
+Error in line 609: Statement is not in a procedure.
+lcMASK = THISFORM.txtPASTA.Value + ALLTRIM(THISFORM.txtPESQUISA.Value) + '.SCX'
+Error in line 612: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 614: Statement is not in a procedure.
+ZAP
+Error in line 615: Statement is not in a procedure.
+lnQF = ADIR(laF,lcMASK)
+Error in line 617: Statement is not in a procedure.
+FOR lnI = 1 TO lnQF
+Error in line 620: Statement is not in a procedure.
+lcFILE = laF[lnI,1]
+Error in line 621: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 622: Statement is not in a procedure.
+SCATTER NAME loREG BLANK MEMO
+Error in line 623: Statement is not in a procedure.
+APPEND BLANK
+Error in line 624: Statement is not in a procedure.
+loREG.ARQUIVO = LOWER(lcFILE)
+Error in line 625: Statement is not in a procedure.
+loREG.AJUSTES = 0
+Error in line 626: Statement is not in a procedure.
+GATHER NAME loREG MEMO
+Error in line 627: Statement is not in a procedure.
+ENDFOR
+Error in line 628: Statement is not in a procedure.
+lcMASK = THISFORM.txtPASTA.Value + 'OBJETOS\' + ALLTRIM(THISFORM.txtPESQUISA.VALUE) + '.PRG'
+Error in line 632: Statement is not in a procedure.
+lnQP = ADIR(laP,lcMASK)
+Error in line 634: Statement is not in a procedure.
+FOR lnP = 1 TO lnQP
+Error in line 637: Statement is not in a procedure.
+lcFILE = laP[lnP,1]
+Error in line 638: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 639: Statement is not in a procedure.
+SCATTER NAME loREG BLANK MEMO
+Error in line 640: Statement is not in a procedure.
+APPEND BLANK
+Error in line 641: Statement is not in a procedure.
+loREG.ARQUIVO = LOWER(lcFILE)
+Error in line 642: Statement is not in a procedure.
+loREG.AJUSTES = 0
+Error in line 643: Statement is not in a procedure.
+GATHER NAME loREG MEMO
+Error in line 644: Statement is not in a procedure.
+ENDFOR
+Error in line 645: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 647: Statement is not in a procedure.
+GO TOP
+Error in line 648: Statement is not in a procedure.
+THISFORM.lblQTDARQ.CAPTION = 'Qt.Arquivos:'+TRANSFORM(lnQF)
+Error in line 651: Statement is not in a procedure.
+THISFORM.grdARQ.RecordSource = 'TMPARQ'
+Error in line 652: Statement is not in a procedure.
+THISFORM.grdARQ.ColumnCount = 3
+Error in line 653: Statement is not in a procedure.
+THISFORM.grdARQ.SetAll('FONTSIZE',8,'HEADER')
+Error in line 654: Statement is not in a procedure.
+THISFORM.grdARQ.AutoFit()
+Error in line 655: Statement is not in a procedure.
+THISFORM.grdARQ.AfterRowColChange()
+Error in line 657: Statement is not in a procedure.
+ENDPROC
+Error in line 658: Nesting error.
+Anchor = 4
+Error in line 667: Statement is not in a procedure.
+BackStyle = 0
+Error in line 668: Statement is not in a procedure.
+Caption = "Qtde Arquivos=0"
+Error in line 669: Statement is not in a procedure.
+Height = 17
+Error in line 670: Statement is not in a procedure.
+Left = 2
+Error in line 671: Statement is not in a procedure.
+Top = 456
+Error in line 672: Statement is not in a procedure.
+Width = 92
+Error in line 673: Statement is not in a procedure.
+Name = "lblQTDARQ"
+Error in line 674: Statement is not in a procedure.
+edtALTERACOES
+Error in line 676: Unrecognized command verb.
+FontSize = 8
+Error in line 677: Statement is not in a procedure.
+Anchor = 15
+Error in line 678: Statement is not in a procedure.
+Height = 397
+Error in line 679: Statement is not in a procedure.
+Left = 232
+Error in line 680: Statement is not in a procedure.
+ReadOnly = .T.
+Error in line 681: Statement is not in a procedure.
+Top = 48
+Error in line 682: Statement is not in a procedure.
+Width = 581
+Error in line 683: Statement is not in a procedure.
+Name = "edtALTERACOES"
+Error in line 684: Statement is not in a procedure.
+BackStyle = 0
+Error in line 686: Statement is not in a procedure.
+Caption = "Pasta:"
+Error in line 687: Statement is not in a procedure.
+Height = 17
+Error in line 688: Statement is not in a procedure.
+Left = 2
+Error in line 689: Statement is not in a procedure.
+Top = -2
+Error in line 690: Statement is not in a procedure.
+Width = 37
+Error in line 691: Statement is not in a procedure.
+Name = "Label5"
+Error in line 692: Statement is not in a procedure.
+Height = 23
+Error in line 694: Statement is not in a procedure.
+Left = 2
+Error in line 695: Statement is not in a procedure.
+Top = 12
+Error in line 696: Statement is not in a procedure.
+Width = 226
+Error in line 697: Statement is not in a procedure.
+DisabledForeColor = 0,0,0
+Error in line 698: Syntax error.
+Name = "txtPASTA"
+Error in line 699: Statement is not in a procedure.
+commandbutton
+Error in line 701: Unrecognized command verb.
+commandbutton
+Error in line 702: Unrecognized command verb.
+Left = 2
+Error in line 703: Statement is not in a procedure.
+Height = 25
+Error in line 704: Statement is not in a procedure.
+Width = 25
+Error in line 705: Statement is not in a procedure.
+Caption = ".."
+Error in line 706: Statement is not in a procedure.
+Name = "cmdOPTAPASTA"
+Error in line 707: Statement is not in a procedure.
+LOCAL lcPASTA AS String
+Error in line 709: Statement is not in a procedure.
+lcPASTA = GETDIR(FULLPATH(''))
+Error in line 711: Statement is not in a procedure.
+IF EMPTY(lcPASTA)
+Error in line 713: Statement is not in a procedure.
+RETURN
+Error in line 714: Statement is not in a procedure.
+ENDIF
+Error in line 715: Statement is not in a procedure.
+THISFORM.txtPASTA.Value = lcPASTA
+Error in line 717: Statement is not in a procedure.
+TRY 
+Error in line 719: Statement is not in a procedure.
+CD (lcPASTA)
+Error in line 720: Statement is not in a procedure.
+CATCH
+Error in line 721: Statement is not in a procedure.
+DO MENS WITH 'FALHA PARA DIRECIONAR PARA O CAMINNHO ESCOLHIDO'
+Error in line 722: Statement is not in a procedure.
+FINALLY
+Error in line 723: Statement is not in a procedure.
+ENDTRY
+Error in line 724: Statement is not in a procedure.
+ENDPROC
+Error in line 726: Nesting error.
+commandbutton
+Error in line 729: Unrecognized command verb.
+commandbutton
+Error in line 730: Unrecognized command verb.
+Left = 120
+Error in line 731: Statement is not in a procedure.
+Height = 23
+Error in line 732: Statement is not in a procedure.
+Width = 109
+Error in line 733: Statement is not in a procedure.
+Anchor = 4
+Error in line 734: Statement is not in a procedure.
+Caption = "Conferir cod.fonte"
+Error in line 735: Statement is not in a procedure.
+Name = "cmdCONFERIR"
+Error in line 736: Statement is not in a procedure.
+LOCAL llRET AS LOGICAL
+Error in line 738: Statement is not in a procedure.
+WAIT WINDOW 'AGUARDE, CONFERINDO CODIGO-FONTE...' NOWAIT
+Error in line 740: Statement is not in a procedure.
+IF THISFORM.chkSALVARCORRECAO.Value=1
+Error in line 742: Statement is not in a procedure.
+IF NOT DIRECTORY('WAW')
+Error in line 743: Statement is not in a procedure.
+MD WAW
+Error in line 744: Statement is not in a procedure.
+ENDIF
+Error in line 745: Statement is not in a procedure.
+IF NOT DIRECTORY('WAW\OBJETOS')
+Error in line 746: Statement is not in a procedure.
+MD WAW\OBJETOS
+Error in line 747: Statement is not in a procedure.
+ENDIF
+Error in line 748: Statement is not in a procedure.
+ENDIF
+Error in line 749: Statement is not in a procedure.
+CREATE CURSOR TMPGRADE (DS_CAMPO MEMO, TG_COR INT, TG_ERRO INT, DS_FORM CHAR(100))
+Error in line 751: Statement is not in a procedure.
+LOCAL lnAN, lnQTD AS INTEGER
+Error in line 753: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 756: Statement is not in a procedure.
+GO TOP
+Error in line 757: Statement is not in a procedure.
+lnQTD = RECCOUNT()
+Error in line 758: Statement is not in a procedure.
+SCAN WHILE NOT EOF()
+Error in line 759: Statement is not in a procedure.
+WAIT WINDOW TRANSFORM(RECNO() / lnQTD * 100,'999.99 %') NOWAIT NOCLEAR
+Error in line 761: Statement is not in a procedure.
+IF THISFORM.chkSALVARCORRECAO.Value=1
+Error in line 763: Statement is not in a procedure.
+IF TMPARQ.AJUSTES=0 OR TMPARQ.ERROS>0
+Error in line 764: Statement is not in a procedure.
+LOOP
+Error in line 765: Statement is not in a procedure.
+ENDIF
+Error in line 766: Statement is not in a procedure.
+ENDIF
+Error in line 767: Statement is not in a procedure.
+IF UPPER(JUSTEXT(TMPARQ.ARQUIVO))  = 'PRG'
+Error in line 768: Statement is not in a procedure.
+llRET = THISFORM.ARRUMARPRG(TMPARQ.ARQUIVO)
+Error in line 769: Statement is not in a procedure.
+ELSE
+Error in line 770: Statement is not in a procedure.
+llRET = THISFORM.ARRUMARFORM(TMPARQ.ARQUIVO)
+Error in line 771: Statement is not in a procedure.
+ENDIF
+Error in line 772: Statement is not in a procedure.
+IF NOT llRET
+Error in line 773: Statement is not in a procedure.
+lnAN = MESSAGEBOX('Erro p/abrir:'+TMPARQ.ARQUIVO+CHR(13)+'Como proceder?',2,'Acesso negado ao form')
+Error in line 774: Statement is not in a procedure.
+IF lnAN=3		
+Error in line 775: Statement is not in a procedure.
+EXIT
+Error in line 776: Statement is not in a procedure.
+ENDIF
+Error in line 777: Statement is not in a procedure.
+IF lnAN=4		
+Error in line 778: Statement is not in a procedure.
+SKIP-1
+Error in line 779: Statement is not in a procedure.
+LOOP
+Error in line 780: Statement is not in a procedure.
+ENDIF
+Error in line 781: Statement is not in a procedure.
+IF lnAN=5		
+Error in line 782: Statement is not in a procedure.
+LOOP
+Error in line 783: Statement is not in a procedure.
+ENDIF
+Error in line 784: Statement is not in a procedure.
+ENDIF
+Error in line 785: Statement is not in a procedure.
+ENDSCAN
+Error in line 786: Statement is not in a procedure.
+SELE TMPARQ
+Error in line 788: Statement is not in a procedure.
+GO TOP
+Error in line 789: Statement is not in a procedure.
+THISFORM.grdARQ.Refresh()
+Error in line 790: Statement is not in a procedure.
+SELE TMPGRADE
+Error in line 792: Statement is not in a procedure.
+GO TOP
+Error in line 793: Statement is not in a procedure.
+THISFORM.GRADE1.RecordSource 			= 'TMPGRADE'
+Error in line 794: Statement is not in a procedure.
+THISFORM.GRADE1.ColumnCount 			= 1
+Error in line 795: Statement is not in a procedure.
+THISFORM.GRADE1.COLUMN1.CONTROLSOURCE 	= 'LEFT(TMPGRADE.DS_CAMPO,250)'
+Error in line 796: Statement is not in a procedure.
+THISFORM.GRADE1.COLUMN1.WIDTH			= 2000
+Error in line 797: Statement is not in a procedure.
+THISFORM.GRADE1.Refresh()
+Error in line 798: Statement is not in a procedure.
+LOCAL loCOLUNA AS Object
+Error in line 800: Statement is not in a procedure.
+FOR EACH loCOLUNA IN THISFORM.GRADE1.Columns
+Error in line 802: Statement is not in a procedure.
+loCOLUNA.DYNAMICBACKCOLOR = 'TG_COR'
+Error in line 803: Statement is not in a procedure.
+ENDFOR
+Error in line 804: Statement is not in a procedure.
+WAIT CLEAR
+Error in line 806: Statement is not in a procedure.
+IF THISFORM.chkSALVARCORRECAO.Value = 1
+Error in line 808: Statement is not in a procedure.
+MESSAGEBOX('Processo concluído com sucesso!',0+64,'Atenção')
+Error in line 809: Statement is not in a procedure.
+ENDIF
+Error in line 810: Statement is not in a procedure.
+ENDPROC
+Error in line 811: Nesting error.
+ýùu
+Error in line 813: Unrecognized command verb.
+ýù§
+Error in line 815: Unrecognized command verb.
+ýù¦þ 
+Error in line 817: Unrecognized command verb.
+ýù¢þW
+Error in line 819: Unrecognized command verb.
+û
+Error in line 822: Unrecognized command verb.
+commandbutton
+Error in line 832: Unrecognized command verb.
+commandbutton
+Error in line 833: Unrecognized command verb.
+Left = 708
+Error in line 834: Statement is not in a procedure.
+Height = 23
+Error in line 835: Statement is not in a procedure.
+Width = 109
+Error in line 836: Statement is not in a procedure.
+Anchor = 12
+Error in line 837: Statement is not in a procedure.
+Cancel = .T.
+Error in line 838: Statement is not in a procedure.
+Caption = "Fechar"
+Error in line 839: Statement is not in a procedure.
+Name = "cmdFECHAR"
+Error in line 840: Statement is not in a procedure.
+THISFORM.Release()
+Error in line 842: Statement is not in a procedure.
+ENDPROC
+Error in line 844: Nesting error.
+Left = 2
+Error in line 847: Statement is not in a procedure.
+Height = 17
+Error in line 848: Statement is not in a procedure.
+Width = 240
+Error in line 849: Statement is not in a procedure.
+Anchor = 4
+Error in line 850: Statement is not in a procedure.
+AutoSize = .T.
+Error in line 851: Statement is not in a procedure.
+Alignment = 0
+Error in line 852: Statement is not in a procedure.
+BackStyle = 0
+Error in line 853: Statement is not in a procedure.
+Caption = "Salvar novo form com cod.fonte corrigido"
+Error in line 854: Statement is not in a procedure.
+Name = "chkSALVARCORRECAO"
+Error in line 855: Statement is not in a procedure.
+Anchor = 15
+Error in line 857: Statement is not in a procedure.
+DeleteMark = .F.
+Error in line 858: Statement is not in a procedure.
+GridLines = 2
+Error in line 859: Statement is not in a procedure.
+Height = 407
+Error in line 860: Statement is not in a procedure.
+Left = 231
+Error in line 861: Statement is not in a procedure.
+RecordSource = "TMPVAZIO"
+Error in line 862: Statement is not in a procedure.
+RowHeight = 17
+Error in line 863: Statement is not in a procedure.
+Top = 48
+Error in line 864: Statement is not in a procedure.
+Width = 582
+Error in line 865: Statement is not in a procedure.
+GridLineColor = 128,128,255
+Error in line 866: Syntax error.
+AllowCellSelection = .F.
+Error in line 867: Statement is not in a procedure.
+Name = "GRADE1"
+Error in line 868: Statement is not in a procedure.
+LOCAL lcARQ AS String
+Error in line 871: Statement is not in a procedure.
+IF UPPER(JUSTEXT(TMPGRADE.DS_FORM)) = 'PRG'
+Error in line 874: Statement is not in a procedure.
+lcARQ= THISFORM.txtPASTA.Value + 'OBJETOS\' + TMPGRADE.DS_FORM
+Error in line 875: Statement is not in a procedure.
+ELSE
+Error in line 876: Statement is not in a procedure.
+lcARQ= TMPGRADE.DS_FORM
+Error in line 877: Statement is not in a procedure.
+ENDIF
+Error in line 878: Statement is not in a procedure.
+LOCAL loSHELL AS "WSCRIPT.SHELL"
+Error in line 881: Statement is not in a procedure.
+loSHELL = CREATEOBJECT("WSCRIPT.SHELL")
+Error in line 882: Statement is not in a procedure.
+IF FILE(lcARQ)
+Error in line 885: Statement is not in a procedure.
+TRY 
+Error in line 886: Statement is not in a procedure.
+loSHELL.Run(lcARQ)
+Error in line 887: Statement is not in a procedure.
+CATCH
+Error in line 888: Statement is not in a procedure.
+DO MENS WITH 'NÃO FOI POSSÍVEL EDITAR FORM, VERIFIQUE SE O MESMO NÃO ESTÁ EM USO: ' + lcARQ
+Error in line 889: Statement is not in a procedure.
+ENDTRY
+Error in line 890: Statement is not in a procedure.
+ENDIF
+Error in line 891: Statement is not in a procedure.
+ENDPROC
+Error in line 892: Nesting error.
+ýùÃ
+Error in line 948: Unrecognized command verb.
+ýù³þ&
+Error in line 952: Unrecognized command verb.
+Left = 228
+Error in line 954: Statement is not in a procedure.
+Height = 17
+Error in line 955: Statement is not in a procedure.
+Width = 189
+Error in line 956: Statement is not in a procedure.
+Anchor = 4
+Error in line 957: Statement is not in a procedure.
+AutoSize = .T.
+Error in line 958: Statement is not in a procedure.
+Alignment = 0
+Error in line 959: Statement is not in a procedure.
+BackStyle = 0
+Error in line 960: Statement is not in a procedure.
+Caption = "Exibir somente linhas com erro"
+Error in line 961: Statement is not in a procedure.
+Name = "chkERRO"
+Error in line 962: Statement is not in a procedure.
+IF USED('TMPGRADE')
+Error in line 964: Statement is not in a procedure.
+IF THIS.Value = 1
+Error in line 965: Statement is not in a procedure.
+SELE TMPGRADE
+Error in line 966: Statement is not in a procedure.
+SET FILTER TO TG_ERRO = 1
+Error in line 967: Statement is not in a procedure.
+ELSE
+Error in line 968: Statement is not in a procedure.
+SELE TMPGRADE
+Error in line 969: Statement is not in a procedure.
+SET FILTER TO
+Error in line 970: Statement is not in a procedure.
+ENDIF
+Error in line 971: Statement is not in a procedure.
+SELE TMPGRADE
+Error in line 973: Statement is not in a procedure.
+THISFORM.GRADE1.SetFocus()
+Error in line 974: Statement is not in a procedure.
+ENDIF
+Error in line 975: Statement is not in a procedure.
+ENDPROC
+Error in line 976: Nesting error.
+
+Error in line 978: Unrecognized command verb.
+(ü÷
+Error in line 980: Unrecognized command verb.
+(þ
+Error in line 981: Unrecognized command verb.
+Left = 27
+Error in line 982: Statement is not in a procedure.
+Top = 36
+Error in line 983: Statement is not in a procedure.
+Width = 176
+Error in line 984: Statement is not in a procedure.
+DisabledForeColor = 0,0,0
+Error in line 985: Syntax error.
+Name = "txtPESQUISA"
+Error in line 986: Statement is not in a procedure.
+THIS.Value = '*'
+Error in line 988: Statement is not in a procedure.
+ENDPROC
+Error in line 989: Nesting error.
+Arial, 0, 8, 5, 14, 11, 29, 3, 0
+Error in line 991: Unrecognized command verb.
+Courier New, 0, 8, 7, 14, 11, 7, 3, 0
+Error in line 992: Unrecognized command verb.

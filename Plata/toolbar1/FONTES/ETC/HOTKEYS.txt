@@ -1,0 +1,10 @@
+Hot keys habilitadas com a toolbar:
+-----------------------------------
+	F9: Posicione o cursor do mouse sobre um objeto para ver suas propriedades.
+	
+Macros comumente utilizadas:
+----------------------------------------
+	SHIFT+F1:		ABRE A TOOLBAR
+	SHIFT+F3:		DO G:\TESTESV\PLATA\MENURAIZ.PRG
+	SHIFT+F4:		CD G:\TESTESVF\
+	CTRL+SHIFT+F4:	CD G:\TESTESVF\

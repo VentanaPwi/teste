@@ -1,0 +1,9 @@
+Customer: Password Interativa Sistemas Ltda
+Version: 19.0
+License: W+P+H+L+X
+Number of licenses: 1
+Compiled in: vfp9
+Release date: 09/26/19
+License string: Password Interativa Sistemas Ltda
+
+Subscription expiration: 09/26/20

@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>Eqeus</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+		<meta name="Generator" content="Microsoft Word 11 (filtered)">
+		<style> <!-- A:hover {background-color:#cccccc;}
+	/* Font Definitions */ @font-face {font-family:Wingdings; panose-1:5 0 0 0 0 0 0 0 0 0;}
+	@font-face {font-family:Tahoma; panose-1:2 11 6 4 3 5 4 4 2 4;}
+	@font-face {font-family:Verdana; panose-1:2 11 6 4 3 5 4 4 2 4;}
+	@font-face {font-family:Courier-new; panose-1:0 0 0 0 0 0 0 0 0 0;}
+	/* Style Definitions */ p.MsoNormal, li.MsoNormal, div.MsoNormal {margin:0in; margin-bottom:.0001pt; font-size:12.0pt; font-family:"Times New Roman";}
+	h2 {margin-right:0in; margin-left:0in; font-size:18.0pt; font-family:"Times New Roman"; font-weight:bold;}
+	h3 {margin-right:0in; margin-left:0in; font-size:13.5pt; font-family:"Times New Roman"; font-weight:bold;}
+	a:link, span.MsoHyperlink {color:crimson; font-weight:normal; text-decoration:none none;}
+	a:visited, span.MsoHyperlinkFollowed {color:crimson; font-weight:normal; text-decoration:none none;}
+	p {margin-right:0in; margin-left:0in; font-size:10.0pt; font-family:Verdana;}
+	pre {margin:0in; margin-bottom:.0001pt; font-size:10.0pt; font-family:Courier-new;}
+	tt {font-family:Tahoma;}
+	p.little, li.little, div.little {margin-right:0in; margin-left:0in; font-size:8.0pt; font-family:Verdana;}
+	p.headline, li.headline, div.headline {margin-right:0in; margin-left:0in; font-size:10.5pt; font-family:Verdana;}
+	p.shortnews, li.shortnews, div.shortnews {margin-right:0in; margin-left:0in; font-size:8.0pt; font-family:Verdana;}
+	p.expldiv, li.expldiv, div.expldiv {margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:22.5pt; border:none; padding:0in; font-size:10.0pt; font-family:Verdana;}
+	@page Section1 {size:595.3pt 841.9pt; margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+	div.Section1 {page:Section1;}
+	/* List Definitions */ ol {margin-bottom:0in;}
+	ul {margin-bottom:0in;}
+	--></style>
+		<meta content="False" name="vs_showGrid">
+		<meta http-equiv="Content-language" content="cs">
+	</head>
+	<body bgcolor="white" lang="CS" link="crimson" vlink="crimson">
+		<div class="Section1">
+			<h2><span lang="EN-US" style='COLOR:black;FONT-FAMILY:Verdana'>XFRX version 
+10.0, Release notes</span></h2>
+			<p><span lang="EN-US" style='COLOR:black'>Release date: 2 December 2004</span></p>
+			<div style='BORDER-RIGHT:black 1pt solid; PADDING-RIGHT:6pt; BORDER-TOP:black 1pt solid; PADDING-LEFT:6pt; BACKGROUND:silver; PADDING-BOTTOM:6pt; BORDER-LEFT:black 1pt solid; PADDING-TOP:6pt; BORDER-BOTTOM:black 1pt solid'>
+				<p class="MsoNormal"><b><span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'>Installation notes</span></b><span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'></span></p>
+				<UL type="disc">
+					<LI class="MsoNormal">
+						<span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'>If you are 
+  using XFRX with source codes, please note
+     that&nbsp;four header&nbsp;(*.H) files have been added: </span>
+						<UL>
+							<li class="MsoNormal">
+								<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">xfrx.h</SPAN>
+							<LI class="MsoNormal">
+								<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">reportlisteners.h</SPAN>
+							<LI class="MsoNormal">
+								<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">reportlisteners_locs.h</SPAN>
+							<LI class="MsoNormal">
+								<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">foxpro_reporting.h</SPAN></LI></UL>
+					<LI class="MsoNormal">
+						<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">Before compiling XFRX, make sure 
+  you define the VFP version you are using in xfrx.h. (Please find more 
+  information about differences between XFRX for VFP 8 and XFRX for VFP 9 in the 
+  Developer's guide at <A href="http://www.eqeus.com/xfrxmanual.php">http://www.eqeus.com/xfrxmanual.php</A>).</SPAN>
+					<LI class="MsoNormal">
+						<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">To reduce 
+  the download size, XFRX.APP is not part of the precompiled packages any more 
+  and we recommend that you add XFRX.FXP into your projects instead, which 
+  enables XFRX to access reports and other resouce files compiled into an exe 
+  file. If you prefer using XFRX.APP, please create a project with one file - 
+  XFRX.FXP -&nbsp;and build the APP. </SPAN>
+					<LI class="MsoNormal">
+						<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">Please be aware that hndlib.dll 
+  and xfrxlib.fll have been modified </SPAN>
+					<LI class="MsoNormal">
+						<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">In order to save reports as pictures, XFRX
+requires two additional libraries to be installed: </SPAN>
+						<ul type="circle">
+							<li class='MsoNormal'>
+								<b>
+									<span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'>msvcr71.dll</span></b><span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'> - Microsoft
+      Visual C++ 7.1 runtime library. If it is not installed on your pc, you
+      can download it from <a href="http://www.eqeus.com/files/msvcr71.zip"><span style='COLOR:windowtext'>http://www.eqeus.com/files/msvcr71.zip</span></a>.
+      </span>
+							<li class='MsoNormal'>
+								<b>
+									<span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'>gdiplus.dll</span></b><span lang="EN-US" style='FONT-SIZE:10pt;FONT-FAMILY:Verdana'> - This dll is
+      included in WindowsXP and if it is not available on your pc, you can
+      download it from <a href="http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm"><span style='COLOR:windowtext'>http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm</span></a>.</span></li>
+						</ul>
+					</LI>
+				</UL>
+				<p style='MARGIN-LEFT:0.5in'><span lang="EN-US">If you are not
+planning to export reports as pictures, you can download a special version of
+XFRXLIB.FLL (<a href="http://www.eqeus.com/files/xfrxlib-nogdiplus.zip"><span style='COLOR:windowtext'>http://www.eqeus.com/files/xfrxlib-nogdiplus.zip</span></a>
+), which doesn't require the two dlls mentioned above.</span></p>
+			</div>
+			<h3><span lang="EN-US" style='COLOR:black;FONT-FAMILY:Verdana'>New features</span></h3>
+			<ul type="disc">
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>XFRX now supports VFP 9. This version works
+     both with “pre-VFP 9” versions (VFP 5, 6, 7 and 8) as well as VFP 9. There
+     are two ways how XFRX can be invoked – the “old one”, used in VFP 5, 6, 7
+     and 8 and the “new one” which can be used in VFP 9. Please see the
+     Developer’s guide (<a href="http://www.eqeus.com/xfrxmanual.php">http://www.eqeus.com/xfrxmanual.php</a>)
+     for more information.</span>
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>New output type – Flow-layout RTF Document has
+     been introduced: an easily editable RTF document, which can be open in MS
+     Word 97 and newer and with certain limitations in Open Office (<a href="http://www.openoffice.org/">http://www.openoffice.org</a>) and PC
+     Suite (<a href="http://www.software602.com/products/pcs">http://www.software602.com/products/pcs</a>).
+     </span></li>
+			</ul>
+			<h3><span lang="EN-US" style='COLOR:black;FONT-FAMILY:Verdana'>Bug fixes</span></h3>
+			<ul type="disc">
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>Integer numeric fields with no formatting are
+     now not printed with decimal part</span>
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>Text fields are automatically adjust the
+     height if the font size is greater than the field’s height</span>
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>The FDOC document header is now using the
+     correct code page</span>
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>Z-index problems in the report previewer have
+     been fixed</span>
+				<LI class="MsoNormal" style="COLOR: black">
+					<FONT face="Verdana" size="2">'Stretch relative to tallest object in group' flag 
+						has not been correctly interpreted at certain scenarios</FONT>
+				<LI class="MsoNormal" style="COLOR: black">
+					<FONT face="Verdana" size="2">Certain FOR clauses were causing the XML output to be 
+						invalid</FONT>
+				<LI class="MsoNormal" style="COLOR: black">
+					<FONT face="Verdana" size="2">The FDOC output type&nbsp;has been invoking new 
+						MSWord session, not following the tlNewSession parameter</FONT>&nbsp;
+				<li class="MsoNormal" style='COLOR:black'>
+					<span lang="EN-US" style='FONT-SIZE:
+     10pt;FONT-FAMILY:
+     Verdana'>Hyperlinks in page header of FDOC
+     documents were hisplayed in wrong font size</span>
+				<LI class="MsoNormal" style="COLOR: black">
+					<SPAN lang="EN-US" style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana">The stability problems when 
+  running multiple reports in a loop have been fixed</SPAN>
+				</LI>
+			</ul>
+			<div class="MsoNormal" align="center" style='TEXT-ALIGN:center'><span lang="EN-US" style='FONT-SIZE:10pt;COLOR:black;FONT-FAMILY:Verdana'>
+					<hr size="2" width="65%" align="center">
+				</span></div>
+		</div>
+		<!-- ------------------------------------------------------ -->
+	</body>
+</html>
